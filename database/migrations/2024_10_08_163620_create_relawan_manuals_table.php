@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('relawan_manuals', function (Blueprint $table) {
             $table->id();
+            $table->string('nik');
+            $table->string('name');
+            $table->enum('jenis_kelamin', ['L', 'P'])->nullable();
+            $table->string('kabupaten');
+            $table->string('kecamatan');
+            $table->string('kelurahan');
+            $table->string('alamat');
+            $table->string('no_handphone');
+            $table->enum('posisi', ['Relawan', 'Pemilih']);
+            $table->string('pengajak');
+            $table->enum('status', ['Proses', 'Terverifikasi']);
+            $table->enum('warna', ['Hijau', 'Kuning', 'Merah'])->nullable();
             $table->timestamps();
         });
     }

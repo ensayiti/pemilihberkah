@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nik');
             $table->string('name');
-            $table->enum('jenis_kelamin', ['L', 'P']);
+            $table->enum('jenis_kelamin', ['L', 'P'])->nullable();
             $table->string('kabupaten');
             $table->string('kecamatan');
             $table->string('kelurahan');
@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('no_handphone');
             $table->enum('posisi', ['Relawan', 'Pemilih']);
             $table->string('pengajak');
-            $table->string('foto_diri')->nullable();
             $table->enum('status', ['Proses', 'Terverifikasi']);
+            $table->enum('warna', ['Hijau', 'Kuning', 'Merah'])->nullable();
             $table->timestamps();
         });
     }

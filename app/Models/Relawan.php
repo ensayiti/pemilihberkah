@@ -20,7 +20,7 @@ class Relawan extends Model
         'no_handphone',
         'posisi',
         'pengajak',
-        'foto_diri',
         'status',
+        'warna',
     ];
 }

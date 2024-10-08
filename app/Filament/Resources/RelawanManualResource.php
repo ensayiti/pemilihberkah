@@ -143,8 +143,7 @@ class RelawanManualResource extends Resource
                     ->size(Tables\Columns\TextColumn\TextColumnSize::ExtraSmall)
                     ->grow(false)
                     ->weight('semibold')
-                    ->searchable()
-                    ->wrap(),
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('kabupaten')
                     ->label('Kabupten/Kota')
                     ->size(Tables\Columns\TextColumn\TextColumnSize::ExtraSmall)
@@ -168,12 +167,6 @@ class RelawanManualResource extends Resource
                     ->size(Tables\Columns\TextColumn\TextColumnSize::ExtraSmall)
                     ->grow(false)
                     ->weight('semibold'),
-                Tables\Columns\IconColumn::make('foto_diri')
-                    ->label('Foto')
-                    ->boolean()
-                    ->grow(false)
-                    ->trueIcon('heroicon-s-check-circle')
-                    ->placeholder('Kosong'),
                 Tables\Columns\TextColumn::make('pengajak')
                     ->label('Pengajak')
                     ->size(Tables\Columns\TextColumn\TextColumnSize::ExtraSmall)
