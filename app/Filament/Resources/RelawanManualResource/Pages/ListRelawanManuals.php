@@ -18,7 +18,7 @@ class ListRelawanManuals extends ListRecords
 
     public function getTitle(): string | Htmlable
     {
-        return __('Relawan [From]');
+        return __('Relawan [Form]');
     }
 
     public function getTabs(): array
